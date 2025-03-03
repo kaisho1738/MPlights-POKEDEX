@@ -1,4 +1,6 @@
 #include "functions.c"
+//version 2.0
+//4:01pm march 3
 
 int main(){
     int choice = 0;
@@ -18,5 +20,9 @@ int main(){
     system("cls");
     displayPokemonType();
     system("pause");
+    } else if(choice == 2){
+        system("cls");
+        inputPokemon(&p);
+        //printf("%d, %d, %d, %s", p->atk,p->def,p->def, p->pokename);
     }
 }

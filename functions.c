@@ -1,5 +1,5 @@
 #include <stdio.h>
-//version 1.0 change
+//version 2.5
 
 //Pokemon Struct
 typedef struct pokemon{
@@ -53,16 +53,38 @@ void displayPokemonType() {
 //Function 3:
 void inputPokemon(pokemon *p){
     printf("Enter Pokedex Number: ");
+    scanf("%d", &p->pokedexNumber);
     
     printf("Enter Pokename: ");
+    scanf("%s", p->pokename);
 
     printf("Enter Type 1: ");
+    scanf("%d", &p->pokemonType1);
 
     printf("Enter Type 2: ");
+    scanf("%d", &p->pokemonType2);
     
     printf("Enter HP: ");
+    scanf("%d", &p->hp);
 
     printf("Enter Attack: ");
+    scanf("%d", &p->atk);
 
-    printf("Enter")
+    printf("Enter Defense: ");
+    scanf("%d", &p->def);
+
+    printf("Enter Speed: ");
+    scanf("%d", &p->spd);
+
+    printf("Enter Special: ");
+    scanf("%d", &p->spd);
+
+    printf("Evolves from (Enter 0 for N/A): ");
+    scanf("%d", &p->evolvesFrom);
+
+    printf("Evolves to (Enter 0 for N/A): ");
+    scanf("%d", &p->evolvesTo);
+
+    printf("Enter Description: ");
+    scanf("%d", p->description);
 }
